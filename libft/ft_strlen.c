@@ -6,13 +6,13 @@
 /*   By: peantoni <peantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 22:11:15 by peantoni          #+#    #+#             */
-/*   Updated: 2022/02/18 18:21:04 by peantoni         ###   ########.fr       */
+/*   Updated: 2022/03/03 15:45:56 by peantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(char *c)
+size_t	ft_strlen(const char *c)
 {	
 	int	i;
 

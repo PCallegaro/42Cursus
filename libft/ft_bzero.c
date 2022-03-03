@@ -6,7 +6,7 @@
 /*   By: peantoni <peantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 21:00:17 by peantoni          #+#    #+#             */
-/*   Updated: 2022/02/18 23:10:44 by peantoni         ###   ########.fr       */
+/*   Updated: 2022/03/03 22:01:18 by peantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,4 +20,3 @@ void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
 }
-  

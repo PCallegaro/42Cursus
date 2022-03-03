@@ -1,39 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: peantoni <peantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/01 21:28:19 by peantoni          #+#    #+#             */
-/*   Updated: 2022/03/03 22:02:08 by peantoni         ###   ########.fr       */
+/*   Created: 2022/03/03 17:59:15 by peantoni          #+#    #+#             */
+/*   Updated: 2022/03/03 22:01:57 by peantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
-{
-	size_t	len;
-	size_t	i;
-	size_t	j;
-	char	*str;
+void	ft_putstr_fd(char *s, int fd)
+{	
+	unsigned int	i;
 
-	if (!s1 || !s2)
-		return (NULL);
-	len = ft_strlen(s1) + ft_strlen(s2);
-	str = (char *)malloc(sizeof(char) * (len + 1));
 	i = 0;
-	if (!str)
-		return (NULL);
-	while (s1[i])
+	if (!s)
+		return ;
+	while (s[i])
 	{
-		str[i] = s1[i];
+		write(fd, &s[i], 1);
 		i++;
 	}
-	j = 0;
-	while (s2[j])
-		str[i++] = s2[j++];
-	str[i] = '\0';
-	return (str);
 }
