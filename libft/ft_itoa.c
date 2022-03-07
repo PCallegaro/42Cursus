@@ -6,7 +6,7 @@
 /*   By: peantoni <peantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 22:13:39 by peantoni          #+#    #+#             */
-/*   Updated: 2022/03/07 15:20:39 by peantoni         ###   ########.fr       */
+/*   Updated: 2022/03/07 16:11:24 by peantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_itoa(int n)
 	if (!str)
 		return (NULL);
 	if (n == -2147483648)
-		ft_putstr_fd(str, -2147483648);
+		return (ft_strdup("-2147483648"));
 	if (n < 0)
 	{
 		str[0] = '-';
