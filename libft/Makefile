@@ -36,6 +36,7 @@ SRCS	=	ft_strlen.c		\
 			ft_putendl_fd.c	\
 			ft_putnbr_fd.c	\
 			ft_itoa.c		\
+			ft_split.c		\
 			
 #Change .c in .o files
 OBJS	=	$(SRCS:.c=.o)
