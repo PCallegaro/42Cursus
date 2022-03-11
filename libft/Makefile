@@ -37,7 +37,14 @@ SRCS	=	ft_strlen.c		\
 			ft_putnbr_fd.c	\
 			ft_itoa.c		\
 			ft_split.c		\
-			
+
+B =	ft_lstnew.c			\
+	ft_lstadd_front.c	\
+	ft_lstsize.c		\
+	ft_lstlast.c		\
+
+B_OBJ = $(B:.c=.o)
+
 #Change .c in .o files
 OBJS	=	$(SRCS:.c=.o)
 
@@ -50,16 +57,20 @@ CFLAGS	=	-Wall -Werror -Wextra
 #Remove 
 RM = rm -f
 
+#Regra Bonus
+
 #Regras 
 all: $(NAME)
 	@echo 'Simple compiler named libft.a was created'
+bonus: $(B_OBJ)
+	@ar rcs $(NAME) $(B_OBJ)
 $(NAME): $(OBJS)
 	@ar rcs $(NAME) $(OBJS)
 %.o: %.c
 	@$(CC) $(CFLAGS) -c $(^) -o $(@)
 #Limpa os .o
 clean:
-	@$(RM) $(OBJS)
+	@$(RM) $(OBJS) $(B_OBJ)
 #limpa tudo
 fclean: clean
 	@$(RM) $(NAME)
