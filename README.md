@@ -12,54 +12,63 @@
 
 ### 1. Part 1 - Libc functions
 
-  -  ft_memset
-  -  ft_bzero
-  -  ft_memcpy
-  -  ft_memccpy
-  -  ft_memmove
-  -  ft_memchr
-  -  ft_memcmp
-  -  ft_strlen
-  -  ft_strlcpy
-  -  ft_strlcat
-  -  ft_strchr
-  -  ft_strrchr
-  -  ft_strnstr
-  -  ft_strncmp
-  -  ft_atoi
-  -  ft_isalpha
-  -  ft_isdigit
-  -  ft_isalnum
-  -  ft_isascii
-  -  ft_isprint
-  -  ft_toupper
-  -  ft_tolower
-  -  ft_calloc
-  -  ft_strdup
+  - [x] ft_memset
+  - [x] ft_bzero
+  - [x] ft_memcpy
+  - [x] ft_memccpy
+  - [x] ft_memmove
+  - [x] ft_memchr
+  - [x] ft_memcmp
+  - [x] ft_strlen
+  - [x] ft_strlcpy
+  - [x] ft_strlcat
+  - [x] ft_strchr
+  - [x] ft_strrchr
+  - [x] ft_strnstr
+  - [x] ft_strncmp
+  - [x] ft_atoi
+  - [x] ft_isalpha
+  - [x] ft_isdigit
+  - [x] ft_isalnum
+  - [x] ft_isascii
+  - [x] ft_isprint
+  - [x] ft_toupper
+  - [x] ft_tolower
+  - [x] ft_calloc
+  - [x] ft_strdup
 
 ### 2. Part 2 - Additional functions
 
-   - ft_substr
-   - ft_strjoin
-   - ft_strtrim
-   - ft_split
-   - ft_itoa
-   - ft_strmapi
-   - ft_putchar_fd
-   - ft_putstr_fd
-   - ft_putendl_fd
-   - ft_putnbr_fd
+  - [x] ft_substr
+  - [x] ft_strjoin
+  - [x] ft_strtrim
+  - [x] ft_split
+  - [x] ft_itoa
+  - [x] ft_strmapi
+  - [x] ft_putchar_fd
+  - [x] ft_putstr_fd
+  - [x] ft_putendl_fd
+  - [x] ft_putnbr_fd
 
 ### 3. Bonus part
   
-   - ft_lstnew
-   - ft_lstadd_front
-   - ft_lstsize
-   - ft_lstlast
-   - ft_lstadd_back
-   - ft_lstdelone
-   - ft_lstclear
-   - ft_lstiter
-   - ft_lstmap
+   - [x] ft_lstnew
+   - [x] ft_lstadd_front
+   - [x] ft_lstsize
+   - [x] ft_lstlast
+   - [x] ft_lstadd_back
+   - [x] ft_lstdelone
+   - [x] ft_lstclear
+   - [x] ft_lstiter
+   - [x] ft_lstmap
 
+# Testers
+<img width="300" alt="Screen Shot 2022-03-13 at 10 14 30 PM" src="https://user-images.githubusercontent.com/83246404/158081552-067edc1f-fc5d-44fe-922e-0ea39c21cb6c.png"> <img width="300" alt="Screen Shot 2022-03-13 at 10 15 45 PM" src="https://user-images.githubusercontent.com/83246404/158081554-613e3ce9-c45b-4f1c-b37a-1cb16c61b45f.png"> <img width="300" alt="Screen Shot 2022-03-13 at 10 16 26 PM" src="https://user-images.githubusercontent.com/83246404/158081556-980eef34-c21e-48f3-9507-25d3a8180228.png">
 
+# Link dos testers
+
+ ### libft-unit-test: https://github.com/alelievr/libft-unit-test.git
+
+ ### libftTester: https://github.com/Tripouille/libftTester.git
+
+ ### libft-war-machine: https://github.com/y3ll0w42/libft-war-machine.git
