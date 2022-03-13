@@ -38,12 +38,17 @@ SRCS	=	ft_strlen.c		\
 			ft_itoa.c		\
 			ft_split.c		\
 
-B =	ft_lstnew.c			\
-	ft_lstadd_front.c	\
-	ft_lstsize.c		\
-	ft_lstlast.c		\
+BONS	=	ft_lstnew.c			\
+			ft_lstadd_front.c	\
+			ft_lstsize.c		\
+			ft_lstlast.c		\
+			ft_lstadd_back.c	\
+			ft_lstdelone.c		\
+			ft_lstclear.c		\
+			ft_lstiter.c		\
+			ft_lstmap.c			\
 
-B_OBJ = $(B:.c=.o)
+B_OBJ = $(BONS:.c=.o)
 
 #Change .c in .o files
 OBJS	=	$(SRCS:.c=.o)
@@ -52,28 +57,29 @@ OBJS	=	$(SRCS:.c=.o)
 CC	= gcc
 
 #Flags 
-CFLAGS	=	-Wall -Werror -Wextra 
+CFLAGS	=	-Wall -Werror -Wextra
 
 #Remove 
-RM = rm -f
-
-#Regra Bonus
+RM =	rm -f
 
 #Regras 
-all: $(NAME)
-	@echo 'Simple compiler named libft.a was created'
-bonus: $(B_OBJ)
-	@ar rcs $(NAME) $(B_OBJ)
-$(NAME): $(OBJS)
-	@ar rcs $(NAME) $(OBJS)
-%.o: %.c
-	@$(CC) $(CFLAGS) -c $(^) -o $(@)
+all:	$(NAME)
+
+$(NAME):	$(OBJS)
+		@ar rcs	$(NAME)	$(OBJS)
+
+bonus:	$(NAME)	$(B_OBJ)
+		@ar rcs	$(NAME)	$(OBJS)	$(B_OBJ)
+
+%.o:	%.c
+		@$(CC) $(CFLAGS) -c $(^) -o $(@)
+
 #Limpa os .o
 clean:
-	@$(RM) $(OBJS) $(B_OBJ)
+		@$(RM) $(OBJS) $(B_OBJ)
 #limpa tudo
 fclean: clean
-	@$(RM) $(NAME)
+		@$(RM) $(NAME)
 #limpa e restart 
 re: fclean all
 

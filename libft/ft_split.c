@@ -6,7 +6,7 @@
 /*   By: peantoni <peantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 17:08:51 by peantoni          #+#    #+#             */
-/*   Updated: 2022/03/10 19:48:49 by peantoni         ###   ########.fr       */
+/*   Updated: 2022/03/13 21:50:43 by peantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,6 @@ static char	*ft_strcpy1(char *dst, char *src, int i, int j)
 	return (dst);
 }
 
-
 static	char	*ft_strdup1( char *src, int j, int i)
 {
 	char	*ptr;
@@ -83,15 +82,4 @@ char	**ft_split(char const *s, char c)
 	}
 	array[x] = 0;
 	return (array);
-}
-
-int	main(void)
-{
-	char	**str;
-	int		i;
-
-	i = 0;
-	str = ft_split("ABC%DFGHIJ%%J%%", '%');
-	while (str[i])
-		printf("%s\n", str[i++]);
 }

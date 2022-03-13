@@ -6,7 +6,7 @@
 /*   By: peantoni <peantoni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/10 21:58:34 by peantoni          #+#    #+#             */
-/*   Updated: 2022/03/10 22:36:32 by peantoni         ###   ########.fr       */
+/*   Updated: 2022/03/13 21:50:21 by peantoni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*node;
 
-	node = malloc(sizeof(t_list *));
+	node = (t_list *)malloc(sizeof(*node));
 	if (!node)
 		return (NULL);
 	node->content = content;
